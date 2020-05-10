@@ -17,7 +17,8 @@ import Skills from './components/Skills';
 
 class App extends Component {
   state = {
-    title: 'Aws monstre'
+    title: 'Aws monstre',
+    isDark: true
   }
 
   handleChange = (event) => {
@@ -26,6 +27,23 @@ class App extends Component {
       title
     })
   }
+
+  handleDarkMode = () => {
+    if(this.state.isDark === true){
+      document.body.classList.remove('black-bg')
+      document.body.classList.remove('dark-vertion')
+      document.body.classList.add('white-vertion')
+      let isDark = !this.state.isDark
+      this.setState({ isDark })
+    }else{
+      document.body.classList.add('black-bg')
+      document.body.classList.add('dark-vertion')
+      document.body.classList.remove('white-vertion')
+      let isDark = !this.state.isDark
+      this.setState({ isDark })
+    }
+    
+  }
   componentDidMount(){
     document.body.classList.add('black-bg')
     document.body.classList.add('dark-vertion')
@@ -33,7 +51,7 @@ class App extends Component {
   render() {
     return (
       <div className="" >
-        <NavBar/>
+        <NavBar darkMode={ this.handleDarkMode } toggle={this.state.isDark} />
         <Home/>
         <About/>
         <Services/>

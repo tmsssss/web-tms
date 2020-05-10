@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
 
-export default class NavBar extends Component {
-    render() {
+
+
+const NavBar = ({ darkMode, toggle }) => {
+    
+    // Toggle dark mode
+    let icon
+    if (toggle){
+        icon = <i className="fa fa-toggle-off fa-2x mt-2" onClick={ darkMode }></i>
+    } else {
+        icon = <i className="fa fa-toggle-on fa-2x mt-2" onClick={ darkMode }></i>
+    }
         return (
             <header className="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header" >
             <div className="overlay"></div>
@@ -25,21 +34,12 @@ export default class NavBar extends Component {
                                 </li>
                                 <li className="nav-item">
                                    <a className="nav-link" href="#mh-skills">Skills</a>
-                                </li>                                
-                                <li className="nav-item">
-                                   <a className="nav-link" href="#mh-experience">Experiences</a>
-                                </li>                                
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#mh-portfolio">Portfolio</a>
-                                </li>                               
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#mh-pricing">Pricing</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#mh-blog">Blog</a>
                                 </li>
                                 <li className="nav-item">
                                    <a className="nav-link" href="#mh-contact">Contact</a>
+                                </li>
+                                <li>
+                                    {icon}
                                 </li>
                             </ul>
                         </div>
@@ -49,5 +49,6 @@ export default class NavBar extends Component {
         </header>
             
         )
-    }
 }
+
+export default NavBar
