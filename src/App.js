@@ -1,6 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './css/bootstrap.min.css'
+import './css/animate.css'
+import './css/aos.css'
+import './css/styles.css'
+import './css/responsive.css'
+
+
+
+
+import NavBar from './components/NavBar';
+import Home from './components/Home';
 
 class App extends Component {
   state = {
@@ -15,25 +26,9 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-
-          <p>
-            {this.state.title}
-          </p>
-  
-          <input onChange={this.handleChange} type="text" placeholder='modif' />
-
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="dark-vertion black-bg">
+        <NavBar/>
+        <Home/>
       </div>
     );
   }
