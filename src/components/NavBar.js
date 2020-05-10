@@ -3,13 +3,13 @@ import React, { Component } from 'react'
 export default class NavBar extends Component {
     render() {
         return (
-            <header className="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
+            <header className="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header" >
             <div className="overlay"></div>
                 <div className="container">
                  <div className="row">
                     <nav className="navbar navbar-expand-lg mh-nav nav-btn">
                         <a className="navbar-brand" href="#">
-                            <img src="assets/images/tms.png" width="100" height="200" alt="" className="img-fluid"/>
+                            <img src="tms.png" width="100" height="200" alt="" className="img-fluid"/>
                         </a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon icon"></span>
