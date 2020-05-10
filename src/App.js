@@ -30,12 +30,14 @@ class App extends Component {
 
   handleDarkMode = () => {
     if(this.state.isDark === true){
+      localStorage.setItem('darkmode', false)
       document.body.classList.remove('black-bg')
       document.body.classList.remove('dark-vertion')
       document.body.classList.add('white-vertion')
       let isDark = !this.state.isDark
       this.setState({ isDark })
     }else{
+      localStorage.setItem('darkmode', true)
       document.body.classList.add('black-bg')
       document.body.classList.add('dark-vertion')
       document.body.classList.remove('white-vertion')
