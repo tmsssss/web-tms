@@ -14,16 +14,16 @@ export default class Home extends Component {
                                 </div>
                                 
                                 <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Tom Sabatier</h2>
-                                <h4 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Product Designer</h4>
+                                <h4 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Développeur Web Junior</h4>
                                 
                                 <ul>
-                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i className="fa fa-envelope"></i><a href="mailto:tom.sbtr9@gmail.com">getemail@email.com</a></li>
-                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i className="fa fa-phone"></i><a href="callto:0638606557">0638606557</a></li>
-                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i className="fa fa-map-marker"></i><address>37, Pollsatnd, New York, United State</address></li>
+                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i className="fa fa-envelope"></i><a href="mailto:tom.sbtr9@gmail.com">tom.sbtr9@gmail.com</a></li>
+                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i className="fa fa-phone"></i>06 38 60 65 57</li>
+                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i className="fa fa-map-marker"></i><address>Montpellier</address></li>
                                 </ul>
                                 
                                 <ul className="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
-                                    <li><a href="https://github.com/tmsssss"><i className="fa fa-github"></i></a></li>
+                                    <li><a target="_blank" href="https://github.com/tmsssss"><i className="fa fa-github"></i></a></li>
                                 </ul>
                             </div>
                         </div>
