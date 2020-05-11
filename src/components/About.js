@@ -28,7 +28,7 @@ export default class About extends Component {
                                     <li><span>Javascript</span></li>
                                 </ul>
                             </div>
-                            <a href="" className="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Downlaod CV <i className="fa fa-download"></i></a>
+                            <a href="index.html" className="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Downlaod CV <i className="fa fa-download"></i></a>
                         </div>
                     </div>
                 </div>

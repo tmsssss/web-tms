@@ -1,0 +1,1 @@
+document.getElementById('cul').addEventListener('click', alert('cul'))

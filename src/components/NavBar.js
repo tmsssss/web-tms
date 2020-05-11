@@ -2,22 +2,52 @@ import React, { Component } from 'react'
 
 
 
-const NavBar = ({ darkMode, toggle }) => {
-    
+class NavBar extends Component {
+    state = {
+        status: 'top'
+      }
+      
+      // Toggle nav color
+      componentDidMount() {
+        this.listener = document.addEventListener("scroll", e => {
+          var scrolled = document.scrollingElement.scrollTop;
+          if (scrolled >= 10) {
+            if (this.state.status !== "bottom") {
+              this.setState({ status: "bottom" });
+            }
+          } else {
+            if (this.state.status !== "top") {
+              this.setState({ status: "top" });
+            }
+          }
+        });
+      }
+
+      componentDidUpdate() {
+        document.removeEventListener("scroll", this.listener);
+      }
+      
+    render (){
+
     // Toggle dark mode
     let icon
-    if (toggle){
-        icon = <i className="fa fa-toggle-off fa-2x mt-2" onClick={ darkMode }></i>
+    if (localStorage.getItem('darkMode') !== 'enabled'){
+        icon = <i className="fa fa-toggle-off fa-2x mt-2" onClick={ this.enableDarkMode }></i>
     } else {
-        icon = <i className="fa fa-toggle-on fa-2x mt-2" onClick={ darkMode }></i>
+        icon = <i className="fa fa-toggle-on fa-2x mt-2" onClick={ this.disableDarkMode }></i>
+
     }
-        return (
-            <header className="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header" >
+        return ( 
+            
+            <header 
+            id="tms-nav"
+            className={`black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp ${this.state.status === 'top' ? "" : "nav-strict"}`} >
+
             <div className="overlay"></div>
                 <div className="container">
                  <div className="row">
                     <nav className="navbar navbar-expand-lg mh-nav nav-btn">
-                        <a className="navbar-brand" href="#">
+                        <a className="navbar-brand" href="index.html">
                             <img src="tms.png" width="100" height="200" alt="" className="img-fluid"/>
                         </a>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,6 +79,8 @@ const NavBar = ({ darkMode, toggle }) => {
         </header>
             
         )
+    }
+        
 }
 
 export default NavBar

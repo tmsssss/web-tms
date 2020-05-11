@@ -17,16 +17,13 @@ export default class Home extends Component {
                                 <h4 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Product Designer</h4>
                                 
                                 <ul>
-                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i className="fa fa-envelope"></i><a href="mailto:">getemail@email.com</a></li>
-                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i className="fa fa-phone"></i><a href="callto:">+12 986 987 7867</a></li>
+                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i className="fa fa-envelope"></i><a href="mailto:tom.sbtr9@gmail.com">getemail@email.com</a></li>
+                                    <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i className="fa fa-phone"></i><a href="callto:0638606557">0638606557</a></li>
                                     <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s"><i className="fa fa-map-marker"></i><address>37, Pollsatnd, New York, United State</address></li>
                                 </ul>
                                 
                                 <ul className="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
-                                    <li><a href=""><i className="fa fa-facebook"></i></a></li>
-                                    <li><a href=""><i className="fa fa-twitter"></i></a></li>
-                                    <li><a href=""><i className="fa fa-github"></i></a></li>
-                                    <li><a href=""><i className="fa fa-dribbble"></i></a></li>
+                                    <li><a href="https://github.com/tmsssss"><i className="fa fa-github"></i></a></li>
                                 </ul>
                             </div>
                         </div>
