@@ -43,9 +43,6 @@ class NavBar extends Component {
                         <a className="navbar-brand" href="/">
                             <img src='tms.png' width="100" height="200" alt="" className="img-fluid"/>
                         </a>
-                        <button class="navbar-toggler" type="button">
-                            <DarkButton />
-                        </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-0 ml-auto">
                             <Link activeClass="active" to="tab-home" spy={true} smooth={true} offset={0} duration={500} >
