@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 
 export default class Home extends Component {
+
     render() {
         return (
-            <section className="mh-home" id="mh-home">
+            <section className="mh-home" id="tab-home">
             <div className="home-ovimg">
                 <div className="container">
                     <div className="row xs-column-reverse section-separator vertical-middle-content home-padding">
                         <div className="col-sm-6">
                             <div className="mh-header-info">
                                 <div className="mh-promo wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">
-                                    <span>Hello I'm</span>
+                                    <span role="img" aria-label="spoke">🖖</span>
                                 </div>
-                                
                                 <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Tom Sabatier</h2>
                                 <h4 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Développeur Web Junior</h4>
                                 
@@ -23,7 +23,7 @@ export default class Home extends Component {
                                 </ul>
                                 
                                 <ul className="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
-                                    <li><a target="_blank" href="https://github.com/tmsssss"><i className="fa fa-github"></i></a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/tmsssss"><i className="fa fa-github"></i></a></li>
                                 </ul>
                             </div>
                         </div>

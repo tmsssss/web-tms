@@ -2,6 +2,17 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: Jost;
+  src: url(./fonts/Jost-VariableFont_wght.ttf);
+}
+.about {
+  font-size: 15px;
+}
+.logo-nav {
+  font-family: "Jost";
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

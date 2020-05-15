@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 
+import DarkButton from './DarkButton'
+
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 
 class NavBar extends Component {
-    state = {
+      state = {
         status: 'top'
       }
-      
       // Toggle nav color
       componentDidMount() {
         this.listener = document.addEventListener("scroll", e => {
@@ -23,22 +26,12 @@ class NavBar extends Component {
         });
       }
 
-      componentDidUpdate() {
-        document.removeEventListener("scroll", this.listener);
-      }
+    componentDidUpdate() {
+        document.removeEventListener("scroll", this.listener);  
+    }
       
     render (){
-
-    // Toggle dark mode
-    let icon
-    if (localStorage.getItem('darkMode') !== 'enabled'){
-        icon = <i className="fa fa-toggle-off fa-2x mt-2" onClick={ this.enableDarkMode }></i>
-    } else {
-        icon = <i className="fa fa-toggle-on fa-2x mt-2" onClick={ this.disableDarkMode }></i>
-
-    }
         return ( 
-            
             <header 
             id="tms-nav"
             className={`black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp ${this.state.status === 'top' ? "" : "nav-strict"}`} >
@@ -47,29 +40,38 @@ class NavBar extends Component {
                 <div className="container">
                  <div className="row">
                     <nav className="navbar navbar-expand-lg mh-nav nav-btn">
-                        <a className="navbar-brand" href="index.html">
-                            <img src="tms.png" width="100" height="200" alt="" className="img-fluid"/>
+                        <a className="navbar-brand" href="/">
+                            <img src='tms.png' width="100" height="200" alt="" className="img-fluid"/>
                         </a>
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon icon"></span>
-                        </button>
-                    
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-0 ml-auto">
+                            <Link activeClass="active" to="tab-home" spy={true} smooth={true} offset={0} duration={500} >
                                 <li className="nav-item active">
-                                    <a className="nav-link" href="#mh-home">Home</a>
+                                    <a className="nav-link" href="#tab-home">Home</a>
                                 </li>
+                            </Link>
+                            <Link activeClass="active" to="tab-about" spy={true} smooth={true} offset={-18} duration={500} >
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#mh-about">About</a>
+                                    <a className="nav-link" href="#tab-about">A propos</a>
                                 </li>
+                            </Link>       
+                            <Link activeClass="active" to="tab-experience" spy={true} smooth={true} offset={0} duration={500} >
                                 <li className="nav-item">
-                                   <a className="nav-link" href="#mh-skills">Skills</a>
+                                    <a className="nav-link" href="#tab-experience">Expériences</a>
                                 </li>
+                            </Link>
+                            <Link activeClass="active" to="tab-skills" spy={true} smooth={true} offset={0} duration={500} >
                                 <li className="nav-item">
-                                   <a className="nav-link" href="#mh-contact">Contact</a>
+                                   <a className="nav-link" href="#tab-skills">Compétences</a>
                                 </li>
-                                <li>
-                                    {icon}
+                            </Link>
+                            <Link activeClass="active" to="tab-contact" spy={true} smooth={true} offset={0} duration={500} >
+                                <li className="nav-item">
+                                   <a className="nav-link" href="#tab-contact">Contact</a>
+                                </li>
+                            </Link>
+                                <li className='mt-3'>
+                                   <DarkButton />
                                 </li>
                             </ul>
                         </div>
