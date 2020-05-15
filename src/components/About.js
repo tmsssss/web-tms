@@ -17,7 +17,7 @@ export default class About extends Component {
                             <p className="wow fadeInUp about" data-wow-duration="0.8s" data-wow-delay="0.2s">
                                 Je suis développeur web junior et me passionne pour le développement
                                 back-end. <br/> Je porte également un intérêt à développer des applications front-end.
-                                <br/> Toute les technologies avec lesquelles nous travaillons évoluent a une vitesse folle, cela rend ce métier passionnant.
+                                <br/> Toutes les technologies avec lesquelles nous travaillons évoluent à une vitesse folle, cela rend ce métier passionnant.
                                 <br/> Voici quelques technologies sur lesquelles je travaille/m'intéresse :
                                 
                         </p>
