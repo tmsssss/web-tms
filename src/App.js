@@ -16,6 +16,7 @@
   import Experience from './components/Experience';
   import Skills from './components/Skills';
   import Contact from './components/Contact'
+  import Footer from './components/Footer'
 
   // Animations
   import WOW from 'wow.js'
@@ -43,6 +44,7 @@
               <Experience/>
               <Skills/>
               <Contact />
+              <Footer/>
             </Route>
           </Switch>
         </Router>

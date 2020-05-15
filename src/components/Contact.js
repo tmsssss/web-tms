@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class Contact extends Component {
     render() {
         return (
-        <footer className="mh-footer" id="tab-contact">
+        <section className="mh-footer" id="tab-contact">
             <div className="map-image image-bg">
                 <div className="container">
                     <div className="row section-separator">
@@ -63,7 +63,7 @@ export default class Contact extends Component {
                     </div>
                 </div>
             </div>
-        </footer>     
+        </section>     
         )
     }
 }
