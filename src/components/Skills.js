@@ -9,10 +9,9 @@ export default class Skills extends Component {
                     <div className="section-title text-center col-sm-12">
                         <h2>Compétences</h2>
                     </div>
-                    <div className="col-sm-12 col-md-6">
+                    <div className="col-sm-12 col-ful">
                         <div className="mh-skills-inner">
                             <div className="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                                <h3>Compétences techniques</h3>
                                 <div className="each-skills">
                                     <div className="candidatos">
                                         <div className="parcial">
@@ -84,60 +83,6 @@ export default class Skills extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-12 col-md-6">
-                        <div className="mh-skills-inner">
-                            <div className="mh-professional-skill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
-                                <h3>Compétences professionnelles</h3>
-                                <div className="each-skills">
-                                    <div className="candidatos">
-                                        <div className="parcial">
-                                            <div className="info">
-                                                <div className="nome">Communication</div>
-                                                <div className="percentagem-num">80%</div>
-                                            </div>
-                                            <div className="progressBar">
-                                                <div className="percentagem" style={{width:'80%'}}></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="candidatos">
-                                        <div className="parcial">
-                                            <div className="info">
-                                                <div className="nome">Travail d'équipe</div>
-                                                <div className="percentagem-num">80%</div>
-                                            </div>
-                                            <div className="progressBar">
-                                                <div className="percentagem" style={{width:'80%'}}></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="candidatos">
-                                        <div className="parcial">
-                                            <div className="info">
-                                                <div className="nome">Gestion de projet</div>
-                                                <div className="percentagem-num">20%</div>
-                                            </div>
-                                            <div className="progressBar">
-                                                <div className="percentagem" style={{width:'20%'}}></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="candidatos">
-                                        <div className="parcial">
-                                            <div className="info">
-                                                <div className="nome">Créativité</div>
-                                                <div className="percentagem-num">40%</div>
-                                            </div>
-                                            <div className="progressBar">
-                                                <div className="percentagem" style={{width:'40%'}}></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </div>
         </section>
