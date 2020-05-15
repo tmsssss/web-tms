@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.notFound {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	background: #eceff1;
+}
+
 @font-face {
   font-family: Jost;
   src: url(./fonts/Jost-VariableFont_wght.ttf);

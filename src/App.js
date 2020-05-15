@@ -17,6 +17,7 @@
   import Skills from './components/Skills';
   import Contact from './components/Contact'
   import Footer from './components/Footer'
+  import NotFound from './components/NotFound'
 
   // Animations
   import WOW from 'wow.js'
@@ -45,6 +46,9 @@
               <Skills/>
               <Contact />
               <Footer/>
+            </Route>
+            <Route>
+              <NotFound/>
             </Route>
           </Switch>
         </Router>
