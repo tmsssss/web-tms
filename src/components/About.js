@@ -40,7 +40,7 @@ export default class About extends Component {
 
                                 </ul>
                             </div>
-                            <a href="/cv.pdf" download className="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Télécharger CV <i className="fa fa-download"></i></a>
+                            <a href="/cv.pdf" download className="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">Télécharger mon CV <i className="fa fa-download"></i></a>
                         </div>
                     </div>
                 </div>
