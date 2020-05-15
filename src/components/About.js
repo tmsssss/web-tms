@@ -15,7 +15,7 @@ export default class About extends Component {
                         <div className="mh-about-inner">
                             <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">A propos</h2>
                             <p className="wow fadeInUp about" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                                Moi c'est Tom, je suis web développeur junior et me passionne pour le développement
+                                Je suis développeur web junior et me passionne pour le développement
                                 back-end. <br/> Je porte également un intérêt à développer des applications front-end.
                                 <br/> Toute les technologies avec lesquelles nous travaillons évoluent a une vitesse folle, cela rend ce métier passionnant.
                                 <br/> Voici quelques technologies sur lesquelles je travaille/m'intéresse :
