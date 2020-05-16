@@ -14,13 +14,13 @@ export const About = ({ t }) => {
                     </div>
                     <div className="col-sm-12 col-md-6">
                         <div className="mh-about-inner">
-                            <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">{t('titleAbout')}</h2>
+                            <h2 className="wow fadeInUp text-center" data-wow-duration="0.8s" data-wow-delay="0.1s">{t('titleAbout')}</h2>
                             <p className="wow fadeInUp about" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                            {t('textAbout1')}<br/>{t('textAbout2')}
-                                <br/> {t('textAbout3')}
-                                <br/> {t('textAbout4')}
-                                
-                        </p>
+                                {t('textAbout1')}<br/>
+                                {t('textAbout2')}<br/>
+                                {t('textAbout3')}<br/>
+                                {t('textAbout4')}
+                            </p>
                             <div className="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                                 <ul>
                                     <li><span><a target='_blank' rel="noopener noreferrer" href="https://www.php.net/">PHP</a></span></li>
@@ -34,6 +34,7 @@ export const About = ({ t }) => {
                                     <li><span><a target='_blank' rel="noopener noreferrer" href="https://gatsbyjs.org/">Gatsby</a></span></li>
                                     <li><span><a target='_blank' rel="noopener noreferrer" href="https://aws.amazon.com/fr/">AWS</a></span></li>
                                     <li><span><a target='_blank' rel="noopener noreferrer" href="https://firebase.google.com/?hl=fr">Firebase</a></span></li>
+                                    <li><span><a target='_blank' rel="noopener noreferrer" href="https://getbootstrap.com/">Bootstrap</a></span></li>
                                 </ul>
                             </div>
                             <a href={t('cv')} download className="btn btn-fill wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">{t('downloadCv')}<i className="fa fa-download"></i></a>
