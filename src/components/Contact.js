@@ -44,7 +44,7 @@ export const Contact = ({ t }) => {
                                     </div>
                                     <div className="each-info">
                                         <h4>{t('tel')}</h4>
-                                        <a href="callto:+33638606557">06 38 60 65 57</a><br/>
+                                        <a href="callto:+33638606557">+33 6 38 60 65 57</a><br/>
 
                                     </div>
                                 </div>
