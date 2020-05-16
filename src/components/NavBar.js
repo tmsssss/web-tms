@@ -61,7 +61,7 @@ class NavBar extends Component {
                             <ul className="navbar-nav mr-0 ml-auto">
                                 <li className='nav-item'>
                                     <Link activeClass="active" className='nav-link' to="tab-home" spy={true} smooth={true} offset={0} duration={500} >
-                                        Home
+                                    {t('home')}
                                     </Link>
                                 </li>
                                 <li className="nav-item">
