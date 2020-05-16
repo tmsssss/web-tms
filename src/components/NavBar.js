@@ -8,10 +8,6 @@ import { Link } from "react-scroll";
 import { withNamespaces } from 'react-i18next';
 import i18n from '../i18n';
 
-
-
-
-
 class NavBar extends Component {
       state = {
         status: 'top'
@@ -40,10 +36,6 @@ class NavBar extends Component {
     componentDidUpdate() {
         document.removeEventListener("scroll", this.listener);  
     }
-
-
-
-
       
     render (){
         const t = this.props.t

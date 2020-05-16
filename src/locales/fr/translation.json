@@ -1,5 +1,5 @@
 {
-    "jobTitle": "Développeur Web Junior",
+    "jobTitle": "Développeur Web Junior ",
     "titleAbout": "A propos",
     "textAbout1":"Je suis développeur web junior et me passionne pour le développement back-end.",
     "textAbout2":"Je porte également un intérêt à développer des applications front-end.",
@@ -14,7 +14,7 @@
     "tel": "Téléphone",
     "experience": "Experience",
     "experience nav": "Experience",
-    "bts": "BTS SIO",
+    "bts": "BTS SIO Option SLAM",
     "cv": "/cv.pdf",
     "page title": "Tom Sabatier - Développeur Web Junior"
   }
