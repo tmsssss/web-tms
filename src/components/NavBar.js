@@ -3,6 +3,13 @@ import React, { Component } from 'react'
 import DarkButton from './DarkButton'
 
 import { Link, animateScroll as scroll } from "react-scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
+import { withNamespaces } from 'react-i18next';
+import i18n from '../i18n';
+
+
 
 
 
@@ -10,6 +17,11 @@ class NavBar extends Component {
       state = {
         status: 'top'
       }
+
+      changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+      }
+
       // Toggle nav color
       componentDidMount() {
         this.listener = document.addEventListener("scroll", e => {
@@ -29,8 +41,13 @@ class NavBar extends Component {
     componentDidUpdate() {
         document.removeEventListener("scroll", this.listener);  
     }
+
+
+
+
       
     render (){
+        const t = this.props.t
         return ( 
             <header 
             id="tms-nav"
@@ -43,6 +60,11 @@ class NavBar extends Component {
                         <a className="navbar-brand" href="/">
                             <img src='tms.png' width="100" height="200" alt="" className="img-fluid"/>
                         </a>
+
+                        <div class="navbar-toggler">
+                            <a className='flag ml-5 mt-2' onClick={() => this.changeLanguage('en')}><img src='uk.png' width='32px' height='32'/></a>     
+                            <a className='flag ml-5 mt-2' onClick={() => this.changeLanguage('fr')}><img src='fr.png' width='32px' height='32'/></a>     
+                        </div>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-0 ml-auto">
                             <Link activeClass="active" to="tab-home" spy={true} smooth={true} offset={0} duration={500} >
@@ -52,20 +74,20 @@ class NavBar extends Component {
                             </Link>
                             <Link activeClass="active" to="tab-about" spy={true} smooth={true} offset={-18} duration={500} >
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#tab-about">A propos</a>
+                                    <a className="nav-link" href="#tab-about">{t('titleAbout')}</a>
                                 </li>
                             </Link>       
-                            <Link activeClass="active" to="tab-experience" spy={true} smooth={true} offset={0} duration={500} >
+                            <Link activeClass="active" to="tab-experience" spy={true} smooth={true} offset={-35} duration={500} >
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#tab-experience">Expériences</a>
+                                    <a className="nav-link" href="#tab-experience">{t('experience nav')}</a>
                                 </li>
                             </Link>
-                            <Link activeClass="active" to="tab-skills" spy={true} smooth={true} offset={0} duration={500} >
+                            <Link activeClass="active" to="tab-skills" spy={true} smooth={true} offset={15} duration={500} >
                                 <li className="nav-item">
-                                   <a className="nav-link" href="#tab-skills">Compétences</a>
+                                   <a className="nav-link" href="#tab-skills">{t('skills')}</a>
                                 </li>
                             </Link>
-                            <Link activeClass="active" to="tab-contact" spy={true} smooth={true} offset={0} duration={500} >
+                            <Link activeClass="active" to="tab-contact" spy={true} smooth={true} offset={30} duration={500} >
                                 <li className="nav-item">
                                    <a className="nav-link" href="#tab-contact">Contact</a>
                                 </li>
@@ -73,6 +95,8 @@ class NavBar extends Component {
                                 <li className='mt-3'>
                                    <DarkButton />
                                 </li>
+                                <a className='flag ml-5 mt-2' onClick={() => this.changeLanguage('en')}><img src='uk.png' width='32px' height='32'/></a>     
+                                <a className='flag ml-5 mt-2' onClick={() => this.changeLanguage('fr')}><img src='fr.png' width='32px' height='32'/></a>                                
                             </ul>
                         </div>
                     </nav>
@@ -85,4 +109,13 @@ class NavBar extends Component {
         
 }
 
-export default NavBar
+
+export default withNamespaces()(NavBar)
+
+
+
+
+
+
+
+

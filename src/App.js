@@ -10,6 +10,8 @@
   import './css/icons/font-awesome-4.7.0/css/font-awesome.min.css'
 
 
+
+
   import NavBar from './components/NavBar';
   import Home from './components/Home';
   import About from './components/About';
@@ -18,6 +20,7 @@
   import Contact from './components/Contact'
   import Footer from './components/Footer'
   import NotFound from './components/NotFound'
+
 
   // Animations
   import WOW from 'wow.js'

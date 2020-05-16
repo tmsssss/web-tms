@@ -1,10 +1,10 @@
-import React, { Component } from 'react'
+import { withNamespaces } from 'react-i18next';
 
-export default class Home extends Component {
+import React from 'react'
 
-    render() {
-        return (
-            <section className="mh-home" id="tab-home">
+export const Home = ({ t }) => {
+    return (
+        <section className="mh-home" id="tab-home">
             <div className="home-ovimg">
                 <div className="container">
                     <div className="row xs-column-reverse section-separator vertical-middle-content home-padding">
@@ -14,7 +14,7 @@ export default class Home extends Component {
                                     <span role="img" aria-label="spoke">🖖</span>
                                 </div>
                                 <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Tom Sabatier</h2>
-                                <h4 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">Développeur Web Junior</h4>
+                                <h4 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">{t('jobTitle')}</h4>
                                 
                                 <ul>
                                     <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i className="fa fa-envelope"></i><a href="mailto:tom.sbtr9@gmail.com">tom.sbtr9@gmail.com</a></li>
@@ -38,6 +38,7 @@ export default class Home extends Component {
                 </div>
             </div>
         </section> 
-        )
-    }
+    )
 }
+
+export default withNamespaces()(Home)

@@ -1,0 +1,20 @@
+{
+    "jobTitle": "Développeur Web Junior",
+    "titleAbout": "A propos",
+    "textAbout1":"Je suis développeur web junior et me passionne pour le développement back-end.",
+    "textAbout2":"Je porte également un intérêt à développer des applications front-end.",
+    "textAbout3":"Toutes les technologies avec lesquelles nous travaillons évoluent à une vitesse folle, cela rend ce métier passionnant.",
+    "textAbout4":"Voici quelques technologies sur lesquelles je travaille/mintéresse :",
+    "downloadCv":"Télécharger mon CV",
+    "responsability": "Responsabilité :",
+    "responsability1":"Tout le web de lentreprise",
+    "responsability2":"Refonte du site principal sous Symfony 4",
+    "skills":"Compétences",
+    "contact":"Contactez moi",
+    "tel": "Téléphone",
+    "experience": "Experience",
+    "experience nav": "Experience",
+    "bts": "BTS SIO",
+    "cv": "/cv.pdf"
+  }
+  

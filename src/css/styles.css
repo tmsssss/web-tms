@@ -1384,7 +1384,7 @@ li .fa {
   line-height: 30px;
 }
 
-.mh-header .navbar-nav li a.nav-link {
+.mh-header .navbar-nav li p.nav-link {
   padding-left: 0;
   padding-right: 0;
 }

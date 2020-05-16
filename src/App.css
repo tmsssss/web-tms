@@ -11,6 +11,9 @@
   color:black !important;
 	background: #eceff1;
 }
+.flag {
+  margin : 5px;
+}
 
 @font-face {
   font-family: Jost;

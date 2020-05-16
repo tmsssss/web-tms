@@ -1,0 +1,20 @@
+  {
+    "jobTitle": "Junior Web Developer ",
+    "titleAbout": "About me",
+    "textAbout1":"I'm a junior web developer passionnate by back-end development.",
+    "textAbout2":"I'm also interested in front-end development.",
+    "textAbout3":"All the technologies we work with are evolving at breakneck speed, this makes this job fascinating.",
+    "textAbout4":"Here is some technologies I work with :",
+    "downloadCv":"Download my CV",
+    "responsability": "Responsability :",
+    "responsability1":"The whole web of the agency",
+    "responsability2":"Main site coding with Symfony 4",
+    "skills":"Skills",
+    "contact":"Contact me",
+    "tel": "Phone",
+    "experience": "Work experience",
+    "experience nav": "Experience",
+    "bts": "BTEC Higher National Diploma in web development",
+    "cv": "/cvEN.pdf"
+  }
+  
