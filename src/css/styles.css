@@ -875,13 +875,13 @@ button:focus {
   opacity: 0.8;
 }
 
-.white-vertion .mh-header .navbar-nav a.active li a {
+.white-vertion .mh-header .navbar-nav li a.active {
   padding-right: 0;
   padding-left: 0;
   border-color: #000;
 }
 
-.white-vertion .mh-header.nav-3 .navbar-nav a.active li a {
+.white-vertion .mh-header.nav-3 .navbar-nav li a.active {
   border-color: transparent;
 }
 
@@ -998,7 +998,7 @@ button:focus {
   color: #000;
 }
 
-.white-vertion .mh-header.white-header.nav-strict .navbar-nav a.active li a {
+.white-vertion .mh-header.white-header.nav-strict .navbar-nav li a.active {
   border-color: #000;
 }
 
@@ -1007,7 +1007,7 @@ button:focus {
   opacity: 0.9;
 }
 
-.white-vertion .mh-header.white-header .navbar-nav a.active li a {
+.white-vertion .mh-header.white-header .navbar-nav li a.active {
   border-color: #fff;
 }
 
@@ -1119,13 +1119,13 @@ button:focus {
   background-color: #fff;
 }
 
-.dark-vertion .mh-header .navbar-nav a.active li a {
+.dark-vertion .mh-header .navbar-nav li a.active {
   border-color: #fff;
   padding-right: 0;
   padding-left: 0;
 }
 
-.dark-vertion .mh-header.nav-3 .navbar-nav a.active li a {
+.dark-vertion .mh-header.nav-3 .navbar-nav li a.active {
   border-color: transparent;
 }
 

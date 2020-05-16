@@ -19,7 +19,6 @@ export const Contact = ({ t }) => {
                                         <i className="fa fa-location-arrow"></i>
                                     </div>
                                     <div className="each-info">
-                                        <h4></h4>
                                         <address>
                                             Montpellier <br/> 
                                             France

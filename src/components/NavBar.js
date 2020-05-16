@@ -2,8 +2,7 @@ import React, { Component } from 'react'
 
 import DarkButton from './DarkButton'
 
-import { Link, animateScroll as scroll } from "react-scroll";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from "react-scroll";
 
 
 import { withNamespaces } from 'react-i18next';
@@ -58,45 +57,45 @@ class NavBar extends Component {
                  <div className="row">
                     <nav className="navbar navbar-expand-lg mh-nav nav-btn">
                         <a className="navbar-brand" href="/">
-                            <img src='tms.png' width="100" height="200" alt="" className="img-fluid"/>
+                            <img src='tms.png' width="100" height="200" alt="logo tms" className="img-fluid"/>
                         </a>
 
-                        <div class="navbar-toggler">
-                            <a className='flag ml-5 mt-2' onClick={() => this.changeLanguage('en')}><img src='uk.png' width='32px' height='32'/></a>     
-                            <a className='flag ml-5 mt-2' onClick={() => this.changeLanguage('fr')}><img src='fr.png' width='32px' height='32'/></a>     
+                        <div className="navbar-toggler">
+                                <button className='flag ml-5 mt-2 hidden' onClick={() => this.changeLanguage('en')}><img src='uk.png' width='32px' height='32' alt="drapeau uk" /></button>     
+                                <button className='flag ml-5 mt-2 hidden' onClick={() => this.changeLanguage('fr')}><img src='fr.png' width='32px' height='32' alt="drapeau fr" /></button>      
                         </div>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-0 ml-auto">
-                            <Link activeClass="active" to="tab-home" spy={true} smooth={true} offset={0} duration={500} >
-                                <li className="nav-item active">
-                                    <a className="nav-link" href="#tab-home">Home</a>
+                                <li className='nav-item'>
+                                    <Link activeClass="active" className='nav-link' to="tab-home" spy={true} smooth={true} offset={0} duration={500} >
+                                        Home
+                                    </Link>
                                 </li>
-                            </Link>
-                            <Link activeClass="active" to="tab-about" spy={true} smooth={true} offset={-18} duration={500} >
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#tab-about">{t('titleAbout')}</a>
+                                    <Link activeClass="active" className="nav-link" to="tab-about" spy={true} smooth={true} offset={-18} duration={500} >
+                                        {t('titleAbout')}
+                                    </Link>       
                                 </li>
-                            </Link>       
-                            <Link activeClass="active" to="tab-experience" spy={true} smooth={true} offset={-35} duration={500} >
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#tab-experience">{t('experience nav')}</a>
+                                    <Link activeClass="active" className="nav-link" to="tab-experience" spy={true} smooth={true} offset={-35} duration={500} >
+                                        {t('experience nav')}
+                                    </Link>       
                                 </li>
-                            </Link>
-                            <Link activeClass="active" to="tab-skills" spy={true} smooth={true} offset={15} duration={500} >
                                 <li className="nav-item">
-                                   <a className="nav-link" href="#tab-skills">{t('skills')}</a>
+                                    <Link activeClass="active" className="nav-link" to="tab-skills" spy={true} smooth={true} offset={15} duration={500} >
+                                        {t('skills')}
+                                    </Link>       
                                 </li>
-                            </Link>
-                            <Link activeClass="active" to="tab-contact" spy={true} smooth={true} offset={30} duration={500} >
                                 <li className="nav-item">
-                                   <a className="nav-link" href="#tab-contact">Contact</a>
+                                    <Link activeClass="active" className="nav-link" to="tab-contact" spy={true} smooth={true} offset={30} duration={500} >
+                                        Contact
+                                    </Link>       
                                 </li>
-                            </Link>
                                 <li className='mt-3'>
                                    <DarkButton />
                                 </li>
-                                <a className='flag ml-5 mt-2' onClick={() => this.changeLanguage('en')}><img src='uk.png' width='32px' height='32'/></a>     
-                                <a className='flag ml-5 mt-2' onClick={() => this.changeLanguage('fr')}><img src='fr.png' width='32px' height='32'/></a>                                
+                                <button className='flag ml-5 mt-2 hidden' onClick={() => this.changeLanguage('en')}><img src='uk.png' width='32px' height='32' alt="drapeau uk" /></button>     
+                                <button className='flag ml-5 mt-2 hidden' onClick={() => this.changeLanguage('fr')}><img src='fr.png' width='32px' height='32' alt="drapeau fr" /></button>                                
                             </ul>
                         </div>
                     </nav>

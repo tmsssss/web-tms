@@ -4,7 +4,7 @@ import { withNamespaces } from 'react-i18next';
 
 export const About = ({ t }) => {
     return (
-        <section className="mh-about" id="tab-about">
+        <section className="mh-about mt-4" id="tab-about">
             <div className="container">
                 <div className="row section-separator">
                     <div className="col-sm-12 col-md-6">

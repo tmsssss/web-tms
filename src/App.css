@@ -15,6 +15,14 @@
   margin : 5px;
 }
 
+.hidden {
+  background: transparent;
+  border: none !important;
+  font-size:0;
+  cursor:pointer;
+
+}
+
 @font-face {
   font-family: Jost;
   src: url(./fonts/Jost-VariableFont_wght.ttf);
