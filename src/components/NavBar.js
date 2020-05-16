@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 
 import DarkButton from './DarkButton'
 
@@ -48,10 +48,11 @@ class NavBar extends Component {
     render (){
         const t = this.props.t
         return ( 
+        <Fragment>
+            <title>{t('page title')}</title>
             <header 
             id="tms-nav"
             className={`black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp ${this.state.status === 'top' ? "" : "nav-strict"}`} >
-
             <div className="overlay"></div>
                 <div className="container">
                  <div className="row">
@@ -102,7 +103,7 @@ class NavBar extends Component {
                 </div>
             </div>
         </header>
-            
+        </Fragment>
         )
     }
         

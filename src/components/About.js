@@ -33,7 +33,7 @@ export const About = ({ t }) => {
                                     <li><span><a target='_blank' rel="noopener noreferrer" href="https://nextjs.org/">Next.js</a></span></li>
                                     <li><span><a target='_blank' rel="noopener noreferrer" href="https://gatsbyjs.org/">Gatsby</a></span></li>
                                     <li><span><a target='_blank' rel="noopener noreferrer" href="https://aws.amazon.com/fr/">AWS</a></span></li>
-                                    <li><span><a target='_blank' rel="noopener noreferrer" href="https://firebase.google.com/?hl=fr">Firebase</a></span></li>
+                                    <li><span><a target='_blank' rel="noopener noreferrer" href="https://github.com/">Git</a></span></li>
                                     <li><span><a target='_blank' rel="noopener noreferrer" href="https://getbootstrap.com/">Bootstrap</a></span></li>
                                 </ul>
                             </div>
