@@ -3,7 +3,6 @@ import { withNamespaces } from 'react-i18next';
 import React from 'react'
 
 export const Home = ({ t }) => {
-    let chif = 12 %= 2
     return (
         <section className="mh-home" id="tab-home">
             <div className="home-ovimg">
@@ -24,7 +23,7 @@ export const Home = ({ t }) => {
                                 </ul>
                                 
                                 <ul className="social-icon wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
-                                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/tmsssss">{chif}<i className="fa fa-github"></i></a></li>
+                                    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/tmsssss"><i className="fa fa-github"></i></a></li>
                                 </ul>
                             </div>
                         </div>
