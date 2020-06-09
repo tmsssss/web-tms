@@ -14,8 +14,7 @@ export const Home = ({ t }) => {
                                     <span role="img" aria-label="spoke">🖖</span>
                                 </div>
                                 <h2 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Tom Sabatier</h2>
-                                <h4 className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">{t('jobTitle')}</h4>
-                                
+                                <h1 itemScope className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">{t('jobTitle')}</h1>       
                                 <ul>
                                     <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s"><i className="fa fa-envelope"></i><a href="mailto:tom.sbtr9@gmail.com">tom.sbtr9@gmail.com</a></li>
                                     <li className="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s"><i className="fa fa-phone"></i>+33 6 38 60 65 57</li>
