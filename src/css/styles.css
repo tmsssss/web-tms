@@ -1400,6 +1400,15 @@ li .fa {
   padding-left: 0;
   padding-right: 0;
 }
+.nav-zer{
+  display: block;
+  padding-top:8px;
+  margin-right: .5rem;
+    margin-left: .5rem;
+    text-align:center;
+    padding-bottom:2px;
+  
+}
 
 .mh-header .navbar-nav li a:hover {
   color: #E8B072;

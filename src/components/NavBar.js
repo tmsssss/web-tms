@@ -60,27 +60,27 @@ class NavBar extends Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mr-0 ml-auto">
                                 <li className='nav-item'>
-                                    <Link activeClass="active" className='nav-link' to="tab-home" spy={true} smooth={true} offset={0} duration={500} >
+                                    <Link activeClass="active" className='nav-zer' to="tab-home" spy={true} smooth={true} offset={0} duration={500} >
                                     {t('home')}
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link activeClass="active" className="nav-link" to="tab-about" spy={true} smooth={true} offset={-18} duration={500} >
+                                    <Link activeClass="active" className="nav-zer" to="tab-about" spy={true} smooth={true} offset={-18} duration={500} >
                                         {t('titleAbout')}
                                     </Link>       
                                 </li>
                                 <li className="nav-item">
-                                    <Link activeClass="active" className="nav-link" to="tab-experience" spy={true} smooth={true} offset={-35} duration={500} >
+                                    <Link activeClass="active" className="nav-zer" to="tab-experience" spy={true} smooth={true} offset={-35} duration={500} >
                                         {t('experience nav')}
                                     </Link>       
                                 </li>
                                 <li className="nav-item">
-                                    <Link activeClass="active" className="nav-link" to="tab-skills" spy={true} smooth={true} offset={15} duration={500} >
+                                    <Link activeClass="active" className=" nav-zer" to="tab-skills" spy={true} smooth={true} offset={15} duration={500} >
                                         {t('skills')}
                                     </Link>       
                                 </li>
                                 <li className="nav-item">
-                                    <Link activeClass="active" className="nav-link" to="tab-contact" spy={true} smooth={true} offset={30} duration={500} >
+                                    <Link activeClass="active" className="nav-zer" to="tab-contact" spy={true} smooth={true} offset={30} duration={500} >
                                         Contact
                                     </Link>       
                                 </li>
