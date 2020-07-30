@@ -100,6 +100,18 @@ body {
   opacity: 0.9;
 }
 
+body::-webkit-scrollbar-track{
+  background: #1e1e24
+}
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #E8B072
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "roboto", sans-serif;
 }
