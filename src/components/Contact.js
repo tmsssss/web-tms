@@ -54,8 +54,13 @@ export const Contact = ({ t }) => {
                     <div className="col-sm-12 mh-copyright wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                         <div className="row">
                             <div className="col-sm-6">
-                                <div className="text-left text-xs-center">
-                                    <p>Tom Sabatier @ 2020</p>
+                                <div >
+                                    <p className="text-left text-xs-center">Tom Sabatier @ 2020</p>
+                                </div>
+                            </div>
+                            <div className="col-sm-6">
+                                <div >
+                                    <p className="text-right text-xs-center"><a href="/mentions-légales">Mentions légales</a></p>
                                 </div>
                             </div>
                         </div>
