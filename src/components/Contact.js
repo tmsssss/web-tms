@@ -1,4 +1,5 @@
 import { withNamespaces } from 'react-i18next';
+import {Link} from 'react-router-dom'
 
 import React from 'react'
 
@@ -60,7 +61,7 @@ export const Contact = ({ t }) => {
                             </div>
                             <div className="col-sm-6">
                                 <div >
-                                    <p className="text-right text-xs-center"><a href="/mentions-légales">Mentions légales</a></p>
+                                    <p className="text-right text-xs-center"><Link to="/mentions-légales">Mentions légales</Link></p>
                                 </div>
                             </div>
                         </div>
