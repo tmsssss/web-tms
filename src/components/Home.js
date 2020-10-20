@@ -1,11 +1,10 @@
 import { withNamespaces } from "react-i18next";
 
-
 import React from "react";
 
 export const Home = ({ t }) => {
   return (
-    <section className="mh-home" id="tab-home">
+    <section className="mh-home svg-home" id="tab-home">
       <div className="home-ovimg">
         <div className="container">
           <div className="row xs-column-reverse section-separator vertical-middle-content home-padding">

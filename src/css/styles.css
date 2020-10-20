@@ -112,6 +112,13 @@ body {
   }
 }
 
+.svg-home{
+    background-image: url('../svg/home.svg');
+    background-size: contain;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+
 .footer-text{
   color: #000 !important;
 }
