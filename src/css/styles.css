@@ -100,6 +100,8 @@ body {
   opacity: 0.9;
 }
 
+
+
 body::-webkit-scrollbar-track{
   background: #1e1e24
 }
