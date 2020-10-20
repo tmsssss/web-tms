@@ -35,9 +35,8 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-        <NavBar />
-
         <Router>
+          <NavBar />
           <Switch>
             <Route exact path="/">
               <Home />
