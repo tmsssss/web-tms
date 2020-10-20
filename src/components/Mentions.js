@@ -13,7 +13,11 @@ const Mentions = () => {
       <h3>Conditions d'utilisation</h3>
       <p>
         Le site accessible par l'url suivant :{" "}
-        <a target="_blank" href="https://www.tomsb.fr/">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.tomsb.fr/"
+        >
           https://www.tomsb.fr/{" "}
         </a>
         est exploité dans le respect de la législation française. L'utilisation
@@ -47,7 +51,11 @@ const Mentions = () => {
       <p>
         Pour toute demande d'autorisation ou d'information, veuillez nous
         contacter par email :{" "}
-        <a target="_blank" href="mailto:tom.sbtr9@gmail.com">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="mailto:tom.sbtr9@gmail.com"
+        >
           tom.sbtr9@gmail.com
         </a>
         . Des conditions spécifiques sont prévues pour la presse.
@@ -56,7 +64,11 @@ const Mentions = () => {
       <p>
         Amazon Web Services <br /> 31 PL DES COROLLES <br /> 92400 COURBEVOIE{" "}
         <br />
-        <a target="_blank" href="https://aws.amazon.com/fr/" target="_blank">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://aws.amazon.com/fr/"
+        >
           https://aws.amazon.com/fr/
         </a>
       </p>

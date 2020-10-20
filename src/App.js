@@ -53,8 +53,8 @@ class App extends Component {
               <NotFound />
             </Route>
           </Switch>
+          <Footer />
         </Router>
-        <Footer />
       </Fragment>
     );
   }
